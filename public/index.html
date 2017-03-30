@@ -13,10 +13,11 @@
       work correctly both with client-side routing and a non-root public URL.
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
+          <link href="css/reset.css" rel="stylesheet">
+      <link href="css/main.css" rel="stylesheet">
     <title>React App</title>
   </head>
   <body>
-    <div id="root"></div>
     <!--
       This HTML file is a template.
       If you open it directly in the browser, you will see an empty page.
@@ -27,5 +28,40 @@
       To begin the development, run `npm start`.
       To create a production bundle, use `npm run build`.
     -->
+
+<div id="gamecontainer">
+      <div id="gamescreen">
+        <div id="sky" class="animated">
+            <div id="flyarea">
+                <div id="ceiling" class="animated"></div>
+                <!-- This is the flying and pipe area container -->
+                <div id="player" class="bird animated"></div>
+                
+                <div id="bigscore"></div>
+                
+                <div id="scoreboard">
+                   <div id="medal"></div>
+                   <div id="currentscore"></div>
+                   <div id="highscore"></div>
+                   <div id="replay"><img src="assets/replay.png" alt="replay"></div>
+                </div>
+                
+                <!-- Pipes go here! -->
+             </div>
+          </div>
+          <div id="land" class="animated"><div id="debug"></div></div>
+         </div>
+      </div>
+      <div class="boundingbox" id="playerbox"></div>
+      <div class="boundingbox" id="pipebox"></div>
+      <div id="root" ></div>
+      
+      <script src="js/jquery.min.js"></script>
+      <script src="js/jquery.transit.min.js"></script>
+      <script src="js/buzz.min.js"></script>
+      <script src="js/Tone.js"></script>
+      <script src="js/main.js"></script>
+
+      
   </body>
 </html>
