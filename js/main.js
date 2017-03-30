@@ -274,7 +274,8 @@ function screenClick(amount=0)
 function playerJump(amount)
 {  
    if (velocity) {
-      velocity = jump + amount % 128
+      console.log("R")
+      velocity = jump - (amount % 128)/2
    }
    velocity = jump;
 }
