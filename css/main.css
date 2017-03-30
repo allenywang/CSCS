@@ -136,6 +136,7 @@ body
    width: 100%;
    height: 100%;
    min-height: 525px;
+   zoom: 140%;
 }
 
 /*
@@ -203,7 +204,7 @@ Screen - Game
 {
    position: absolute;
    top: 20px;
-   left: 150px;
+   left: 50%;
    z-index: 100;
 }
 
@@ -213,17 +214,6 @@ Screen - Game
    padding: 1px;
 }
 
-#splash
-{
-   position: absolute;
-   opacity: 0;
-   top: 75px;
-   left: 65px;
-   width: 188px;
-   height: 170px;
-   background-image: url('../assets/splash.png');
-   background-repeat: no-repeat;
-}
 
 #scoreboard
 {
@@ -231,7 +221,7 @@ Screen - Game
    display: none;
    opacity: 0;
    top: 64px;
-   left: 43px;
+   left: 40%;
    width: 236px;
    height: 280px;
    background-image: url('../assets/scoreboard.png');
